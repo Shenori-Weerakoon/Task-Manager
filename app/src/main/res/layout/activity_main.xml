@@ -7,13 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_name"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/taskDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_desc"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Task"
+            android:id="@+id/newTaskButton"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?colorOnPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_margin="20dp"
+            app:icon="@drawable/ic_android_black_24dp"
+            app:iconTint="?colorOnPrimary"
+            />
+
+    </RelativeLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
