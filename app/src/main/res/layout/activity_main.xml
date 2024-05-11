@@ -39,7 +39,7 @@
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Task"
+            android:text="@string/new_task"
             android:id="@+id/newTaskButton"
             android:backgroundTint="?attr/colorPrimary"
             android:textColor="?colorOnPrimary"
@@ -48,7 +48,7 @@
             android:padding="5dp"
             android:layout_margin="20dp"
             app:icon="@drawable/ic_android_black_24dp"
-            app:iconTint="?colorOnPrimary"
+            app:iconTint="@color/btn_blue"
             />
 
     </RelativeLayout>
