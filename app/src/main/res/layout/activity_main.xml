@@ -28,7 +28,7 @@
             android:layout_alignParentEnd="true"
             android:padding="5dp"
             android:layout_margin="20dp"
-            app:icon="@drawable/ic_android_black_24dp"
+            app:icon="@drawable/add_24"
             app:iconTint="@color/btn_blue"
             />
 
